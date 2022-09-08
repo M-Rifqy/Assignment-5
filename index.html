@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap-5.2.0/dist/css/bootstrap.css"></link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"></link>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container-fluid d-flex justify-content-around">
+            <a class="navbar-brand" href="#">
+                <img src="./materials/ANTUM.png" alt="ANTUM" class="img-fluid">
+            </a>
+            <div class="search-container">
+                <input type='search' name='search' class='search-field' placeholder='Enter your product name...'/>
+                <button class='search-btn'>
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+            <div class="action-container">
+                <button class="action-btn">
+                    <i class="bi bi-heart"></i>
+                    <span class="count">0</span>
+                </button>
+                <button class="action-btn">
+                    <i class="bi bi-person"></i>
+                </button>
+                <button class="action-btn">
+                    <i class="bi bi-handbag"></i>
+                    <span class="count">0</span>
+                </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="mobile-navbar"></div>
+
+      <!-- Carousel -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="modal">
+            <img src="./materials/4.jpg" class="d-block w-100 carousel-img" alt="1">
+            <div class="carousel-caption">
+                <div class="caption-text">
+                    <img src="./materials/ANTUM.png" alt="ANTUM"  class="img-fluid caption-img" />
+                <p class="caption-p">One Stop Solution For All Your Cleaning Requirements</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./materials/5.jpg" class="d-block w-100 carousel-img" alt="2">
+            <div class="carousel-caption">
+                <div class="caption-text">
+                    <img src="./materials/ANTUM.png" alt="ANTUM"  class="img-fluid caption-img" />
+                <p class="caption-p">One Stop Solution For All Your Cleaning Requirements</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./materials/6.jpg" class="d-block w-100 carousel-img" alt="3">
+            <div class="carousel-caption">
+                <div class="caption-text">
+                    <img src="./materials/ANTUM.png" alt="ANTUM"  class="img-fluid caption-img" />
+                <p class="caption-p">One Stop Solution For All Your Cleaning Requirements</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Categories -->
+      <div class="container my-5">
+        <div class="row">
+          <div class="col d-flex justify-content-between">
+            <div class="categories-title">
+              <h4><i class="bi bi-grid"></i> Categories</h4>
+            </div>
+            <div class="categories-indicator">
+              <button><i class="bi bi-chevron-left"></i></button>
+              <button><i class="bi bi-chevron-right"></i></button>
+            </div>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <a href='#' class="card showcase">
+                <div class="showcase-banner">
+                  <img src="./materials/deterjen.png" class="product-img" alt="product"/>
+                  <p class="showcase-badge product-label">NEW</p>
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <i class="bi bi-heart"></i>
+                    </button>
+                    <button class="btn-action">
+                      <i class="bi bi-bag-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5>Rp.1.000.000,-</h5>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <div className="showcase-rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href='#' class="card showcase">
+                <div class="showcase-banner">
+                  <img src="./materials/deterjen.png" class="product-img" alt="product"/>
+                  <p class="showcase-badge product-label">NEW</p>
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <i class="bi bi-heart"></i>
+                    </button>
+                    <button class="btn-action">
+                      <i class="bi bi-bag-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5>Rp.1.000.000,-</h5>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <div className="showcase-rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href='#' class="card showcase">
+                <div class="showcase-banner">
+                  <img src="./materials/deterjen.png" class="product-img" alt="product"/>
+                  <p class="showcase-badge product-label">NEW</p>
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <i class="bi bi-heart"></i>
+                    </button>
+                    <button class="btn-action">
+                      <i class="bi bi-bag-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5>Rp.1.000.000,-</h5>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <div className="showcase-rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href='#' class="card showcase">
+                <div class="showcase-banner">
+                  <img src="./materials/deterjen.png" class="product-img" alt="product"/>
+                  <p class="showcase-badge product-label">NEW</p>
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <i class="bi bi-heart"></i>
+                    </button>
+                    <button class="btn-action">
+                      <i class="bi bi-bag-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5>Rp.1.000.000,-</h5>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <div className="showcase-rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="container my-5">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Lorem, ipsum.</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere officia debitis eligendi quisquam non est!</p>
+                  <a href="#" class="btn btn-dark">Shop Now <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Lorem, ipsum.</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quis omnis odit, repellendus a illo.</p>
+                  <a href="#" class="btn btn-dark">Shop Now <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <script src="./bootstrap-5.2.0/dist/js/bootstrap.js"></script>
+</body>
+</html>
