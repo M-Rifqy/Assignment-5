@@ -191,6 +191,23 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Category */
+.category-header {
+  margin-bottom: 10px;
+}
+
+.category-header .categories-indicator button {
+  padding: 3px 5px;
+  margin: 2px;
+  border: none;
+  background-color: hsl(0, 100%, 100%);
+  border-radius: 50%;
+  transition: 0.5s ease;
+}
+
+.category-header .categories-indicator button:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.20);
+}
+
 img, .btn-action, a { 
   display: block; 
 }
